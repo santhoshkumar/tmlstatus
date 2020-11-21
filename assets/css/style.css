@@ -1,0 +1,548 @@
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: rgba(45, 59, 255, 0.302);
+    border-radius: 8px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(191, 18, 253, 0.5);
+}
+body {
+    background-color: #ffffff;
+    color: rgba(0, 0, 0, 0.6);
+    font-family:'Catamaran', sans-serif;
+    font-size: 16px;
+    line-height: 1.618;
+	-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: grayscale;
+	overflow-x: hidden;
+}
+h1{font-weight:700;font-size:33px;}
+h2{font-weight:700;font-size:28px;}
+h3{font-weight:700;font-size:23px;}
+h4{font-weight:700;font-size:18px;}
+h5{font-weight:700;font-size:15px;}
+  .navbar {
+    background-color:#dd2840;
+}
+.navbar-nav > li{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    word-wrap: break-word;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -o-hyphens: auto;
+    hyphens: auto;
+}
+a, a:visited{color:#4a59df; text-decoration:none}
+a:hover{color:#4a59df; text-decoration:underline}
+a:focus, a:hover, a:active{outline:none}
+  /*
+   * Override Bootstrap's default container.
+   */
+  
+  .container {
+    max-width: 60rem;
+  }
+  
+  /*
+   * Main column and sidebar layout
+   */
+  
+  /* Sidebar modules for boxing content */
+  .sidebar-module {
+    padding: 1rem;
+    /*margin: 0 -1rem 1rem;*/
+  }
+  .sidebar-module-inset {
+    padding: 1rem;
+    background-color: #f5f5f5;
+    border-radius: .25rem;
+  }
+  .sidebar-module-inset p:last-child,
+  .sidebar-module-inset ul:last-child,
+  .sidebar-module-inset ol:last-child {
+    margin-bottom: 0;
+  }
+   .footer {
+    margin-top: 2.6em;
+    padding: 20px 0 26px
+}
+.footer-text p {
+    font-size: 16px;
+    font-family:'Catamaran', sans-serif;
+    text-align: center;
+    font-weight: 400;
+    color: #36383f
+}
+  .post-home {
+    font-weight: 700;
+    font-size: 24px;
+  }
+  .post-home a {
+      color: #494c4e;
+  }
+  .post-home>a:hover,
+  .post-home>a:focus {
+      text-decoration: none;
+      color: #0085a1
+  }
+  @media only screen and (min-width: 768px) {
+    .post-home{
+        font-size: 28px
+    }
+}
+/* Keep images centered, and allow images wider than the main
+   text column to break out. */
+   .post-content img {
+    display: block;
+    max-width: 126%;
+    height: auto;
+    padding: 0.6em 0;
+    /* Centers an image by (1) pushing its left edge to the
+       center of its container and (2) shifting the entire image
+       in the opposite direction by half its own width.
+       Works for images that are larger than their containers. */
+    position: relative;
+    left: 50%;
+    -webkit-transform: translateX(-50%); /* for Safari and iOS */
+    -ms-transform: translateX(-50%); /* for IE9 */
+    transform: translateX(-50%);
+}
+.post-content img {
+    max-height: 100%;
+    max-width: 100%;
+    }
+.post-title {
+    font-size:23px
+}
+.post-head {
+    font-size: 24px;
+    font-weight: 700 !important;
+    color: #444;
+}
+.post-content h2 {
+    font-size:23px
+}
+.post-content p {
+    line-height: 26px;
+    margin-bottom: 25px;
+    word-wrap: break-word;
+    font-family:'Catamaran', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #221f1f;
+}
+.post-content li {
+    font-family:'Catamaran', sans-serif;
+    font-size: 16px;
+}
+/* SHAREBUTTONS */
+.sharebuttons a { color: #fff !important; }
+.btn-facebook { background: #0088cc;}
+.btn-twitter { background: #00acee;}
+.btn-google { background: #dd4b39;}
+.btn-whatsapp { background: #25D366;}
+.btn-facebook:hover { background: #2f4679;}
+.btn-twitter:hover { background: #0089bd;}
+.btn-google:hover { background: #b03b2d;}
+.btn-whatsapp:hover { background: #25D366;}
+p {
+    line-height: 1.5;
+    font-weight: 400;
+    font-size: 16px;
+    font-family:'Catamaran', sans-serif;
+    word-wrap: break-word;
+    letter-spacing: 0;
+    color: #221f1f;
+}
+a {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+ }
+/* Post Meta */
+.post-date {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: bold;
+}
+.post-author {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: bold;
+}
+.post-tags {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: bold;
+}
+.author-bio {
+    color: #292727;
+    font-family:'Catamaran', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 0
+}
+.tag-archieves {
+    color: #424040;
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 0
+}
+
+.archieves-meta {
+    color: #2e2c2c;
+    font-size: 14px;
+    margin-top: 0
+}
+.archieves-meta>a {
+    text-decoration: none;
+    color: #404040
+}
+.archieves-metas>a {
+    text-decoration: none;
+    color: #404040
+}
+.archieves-meta>a:hover,
+.archieves-meta>a:focus {
+    color: #0085a1;
+    text-decoration: underline
+}
+.post-subarchs {
+    color: #222020;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 0
+}
+.post-subarchs>a {
+    text-decoration: none;
+    color: #404040
+}
+.post-subarchs>a:hover,
+.post-subarchs>a:focus{
+    color: #0085a1;
+    text-decoration: underline
+}
+.btn {
+    white-space:normal !important;
+    word-wrap: break-word; 
+}
+hr {
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: -webkit-linear-gradient(left, #ccc, #333, #ccc);
+    background-image: -moz-linear-gradient(left, #ccc, #333, #ccc);
+    background-image: -ms-linear-gradient(left, #ccc, #333, #ccc);
+    background-image: -o-linear-gradient(left, #ccc, #333, #ccc);
+    }
+/* Hide on Mobile */
+@media only screen and (max-width: 800px) {
+    .hide-on-mobile {
+        display: none!important
+    }
+}
+.read-more {
+	display: flex;
+	flex-grow: 0.2;
+    font-size: 14px;
+    font-weight: bold;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+	border-radius: 32px;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased !important;
+	-moz-font-smoothing: antialiased !important;
+	text-rendering: optimizelegibility !important;
+}
+.post-hl img {
+    display: block;
+    max-width: 126%;
+    height: auto;
+    padding: 0.6em 0;
+    /* Centers an image by (1) pushing its left edge to the
+       center of its container and (2) shifting the entire image
+       in the opposite direction by half its own width.
+       Works for images that are larger than their containers. */
+    position: relative;
+    left: 50%;
+    -webkit-transform: translateX(-50%); /* for Safari and iOS */
+    -ms-transform: translateX(-50%); /* for IE9 */
+    transform: translateX(-50%);
+}
+.post-hl img {
+    max-height: 100%;
+    max-width: 100%;
+    }
+    .form-control {
+        border-color: rgba(126, 239, 104, 0.8);
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(126, 239, 104, 0.6);
+        outline: 0 none;
+        margin-bottom: -1px;
+        padding-bottom: 8px;
+        padding-top: 8px;
+    }
+    .input {
+        margin-bottom:4px;white-space: normal;
+    }
+    ::placeholder {
+      white-space: normal;
+      text-transform: uppercase;
+      font-size: 13px;
+    }
+    .bt-login{
+        background-color: #ff8627;
+        color: #ffffff;
+        padding-bottom: 8px;
+        padding-top: 8px;
+        font-weight: bold;
+	   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+	   border-radius: 32px;
+	   -moz-osx-font-smoothing: grayscale;
+	   -webkit-font-smoothing: antialiased !important;
+	   -moz-font-smoothing: antialiased !important;
+	   text-rendering: optimizelegibility !important;
+    }
+    .well {
+        background: rgb(22, 105, 173);
+        border: solid;
+        color: #ff8627;
+    }
+    .btn {
+        font-weight: 700;
+        font-size:14px;
+        color: #fff;
+    }
+    .login-form {
+        margin: 0 auto !important;
+        float: none;
+        padding: 15px;
+    }
+    .login-form form.form-horizontal {
+        padding: 10px 20px;
+    }
+    .login-form a {
+        color: #fff;
+    }
+    .para {
+        font-size: 14px;
+        color: #fff;
+    }
+/* Social icons */
+.rssicon {
+    color: #f89839;
+    font-size: 24px;
+    margin: 0 18px 0 5px;
+}
+.twittericon {
+    color: #55acee;
+    font-size: 24px;
+    margin: 0 18px 0 0px;
+}
+.fbicon {
+    color: #3b5998;
+    font-size: 24px;
+    margin: 0 18px 0 0px;
+}
+.gplusicon {
+    color: #d34836;
+    font-size: 24px;
+    margin: 0 18px 0 0px;
+}
+.instagram {
+    color: #e4405f;
+    font-size: 24px;
+    margin: 0 18px 0 0px;
+}
+.btn {
+    border-radius:9999px
+}
+.btn-default-outline{
+    background-color:transparent;
+    color:#fff;
+    border-color:#FFF
+}
+.btn-default-outline:hover,.btn-default-outline:active,.btn-default-outline:focus{
+    background-color:#FFF;
+    color:#0875aa
+}
+.kg-image-card {
+    max-height: 100%;
+      max-width: 100%;
+  }
+  .kg-image-card.kg-width-wide {
+    max-height: 100%;
+      max-width: 100%;
+  }
+  .kg-image-card.kg-width-full {
+    max-height: 100%;
+      max-width: 100%;
+  }
+  .kg-image-card .kg-image {
+    margin: 0 auto
+  }
+  .kg-image-card figcaption {
+    font-family: 'Nunito', sans-serif;
+    color: #8a9199;
+    text-align: center;
+    max-width: 32em;
+    margin: auto;
+    font-size: 0.75em;
+    line-height: 1.25em;
+    padding: 0.667em 0
+  }
+  .kg-image-card .kg-image-full+figcaption {
+    margin-bottom: 1.334em
+  }
+  .kg-embed-card {
+      max-height: 100%;
+      max-width: 100%;
+      margin: 0 0 2em;
+      overflow-y: hidden;
+  }
+  .kg-embed-card>* {
+    margin-left: auto;
+    margin-right: auto
+  }
+  .kg-gallery-container {
+      display: flex;
+      flex-direction: column;
+      max-width: 1040px;
+      width: 100%;
+  }
+  .kg-gallery-row {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+  }
+  .kg-gallery-image img {
+      display: block;
+      margin: 0;
+      width: 100%;
+      height: 100%;
+  }
+  .kg-gallery-row:not(:first-of-type) {
+      margin: 0.75em 0 0 0;
+  }
+  .kg-gallery-image:not(:first-of-type) {
+      margin: 0 0 0 0.75em;
+  }
+  .kg-code-card {
+      min-width: 100%;
+  }
+  .kg-code-card pre {
+      margin: 0;
+  }
+  .kg-bookmark-card {
+      background: #ffffff;
+      width: 100%;
+  }
+  .kg-card + .kg-bookmark-card {
+      margin-top: 0;
+  }
+  .kg-bookmark-container {
+      display: flex;
+      font-family: 'Nunito', sans-serif;
+      color: #15171A;
+      text-decoration: none;
+      min-height: 148px;
+      box-shadow: 0px 2px 5px -1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.09);
+      border-radius: 3px;
+  }
+  .kg-bookmark-content {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding: 20px;
+  }
+  .kg-bookmark-title {
+      font-size: 1.6rem;
+      line-height: 1.5em;
+      font-weight: 600;
+      color: #738a94;
+  }
+  .kg-bookmark-container:hover .kg-bookmark-title {
+      color: #3eb0ef;
+  }
+  .kg-bookmark-description {
+      display: -webkit-box;
+      font-size: 1.5rem;
+      line-height: 1.5em;
+      color: #738a94;
+      font-weight: 400;
+      margin-top: 12px;
+      max-height: 48px;
+      overflow-y: hidden;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+  }
+  .kg-bookmark-thumbnail {
+      position: relative;
+      min-width: 33%;
+      max-height: 100%;
+  }
+  .kg-bookmark-thumbnail img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 0 3px 3px 0;
+  }
+  .kg-bookmark-metadata {
+      display: flex;
+      align-items: center;
+      font-size: 1.5rem;
+      font-weight: 400;
+      color: #738a94;
+      margin-top: 14px;
+      flex-wrap: wrap;
+  }
+  .kg-bookmark-icon {
+      width: 22px;
+      height: 22px;
+      margin-right: 8px;
+  }
+  .kg-bookmark-author {
+      line-height: 1.5em;
+  }
+  .kg-bookmark-author:after {
+      content: "•";
+      margin: 0 6px;
+  }
+  .kg-bookmark-publisher {
+      overflow: hidden;
+      line-height: 1.5em;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      max-width: 240px;
+  }
+  @media (max-width: 500px) {
+      .kg-bookmark-container {
+          flex-direction: column;
+      }
+  
+      .kg-bookmark-thumbnail {
+          order: 1;
+          width: 100%;
+          min-height: 160px;
+      }
+  
+      .kg-bookmark-thumbnail img {
+          border-radius: 3px 3px 0 0;
+      }
+  
+      .kg-bookmark-content {
+          order: 2
+      }
+  }

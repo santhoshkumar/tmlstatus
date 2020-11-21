@@ -1,0 +1,10 @@
+{{!< default}}
+<nav role="navigation" aria-label="Page navigation example">
+    {{#if prev}}
+        <a class="newer-posts font-weight-bold" href="{{page_url prev}}">&larr; Previous</a>
+    {{/if}}
+    <span class="page-number font-weight-bold">Page {{page}} of {{pages}}</span>
+    {{#if next}}
+        <a class="older-posts font-weight-bold" href="{{page_url next}}">Next &rarr;</a>
+    {{/if}}
+</nav>

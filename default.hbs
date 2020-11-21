@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="{{@site.lang}}">
+<head>
+    {{!-- Document Settings --}}
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    {{!-- Page Meta --}}
+    <title>{{meta_title}}</title>
+
+    {{!-- Mobile Meta --}}
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#F97F51">
+
+    {{!-- Styles'n'Scripts --}}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css" integrity="sha512-oc9+XSs1H243/FRN9Rw62Fn8EtxjEYWHXRvjS43YtueEewbS6ObfXcJNyohjHqVKFPoXXUxwc+q1K7Dee6vv9g==" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="{{asset "built/style.css"}}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Catamaran:400,700&display=swap" as="style" onload="this.rel='stylesheet'">
+
+    {{!-- Ghost outputs important style and meta data with this tag --}}
+    {{ghost_head}}
+
+</head>
+<body class="{{body_class}}">
+
+{{!-- The blog navigation links --}}
+{{navigation}}
+
+{{!-- content --}}
+<main id="content">
+{{{body}}}
+</main>
+
+<footer>
+<div class="footer">
+<div class="footer-text">
+<div class="text-center">
+<div class="sharebuttons btn-group">
+<a class="btn btn-info read-more" href="/create/">📝 Post your kavithai</a>
+</div>
+</div>
+<br>
+<p class="font-weight-bold">Copyright &copy; {{date format='YYYY'}} Tamil SMS Blog.</a></p>
+</div>
+</div>
+</footer>
+
+   {{!-- jQuery needs to come before `{{ghost_foot}}` so that jQuery can be used in code injection --}}
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.min.js" integrity="sha512-8qmis31OQi6hIRgvkht0s6mCOittjMa9GMqtK9hes5iEQBQE/Ca6yGE5FsW36vyipGoWQswBj/QBm2JR086Rkw==" crossorigin="anonymous"></script>
+
+    {{!-- Ghost outputs important scripts and data with this tag --}}
+    {{ghost_foot}}
+
+
+</body>
+</html>

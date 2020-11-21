@@ -1,0 +1,27 @@
+{{!< default}}
+
+{{!-- The comment above "< default" means - insert everything in this file into
+    the {{{body}}} of the default.hbs template, containing the blog header/footer. --}}
+
+{{!-- Everything inside the #post tags pulls data from the post --}}
+{{#post}}
+
+<div class="container">
+<div class="row">
+<div class="col-lg-8 col-lg-offset-2 mx-auto">
+<br />
+
+<article class="{{post_class}}">
+<h1 class="post-title text-center">{{title}}</h1>
+<br />
+
+<section class="post-content">
+{{content}}
+</section>
+
+</article>
+</div>
+</div>
+</div>
+
+{{/post}}

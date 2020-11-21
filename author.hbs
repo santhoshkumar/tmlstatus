@@ -1,0 +1,51 @@
+{{!< default}}
+
+{{#author}}
+
+<div class="container">
+<div class="row">
+<div class="col-lg-6 col-lg-offset-3 mx-auto text-center">
+<br />
+<br />
+<h2 class="author-bio font-weight-bold">Posts by {{name}}</h2>
+{{#if bio}}<p class="author-bio">{{bio}}</p>{{/if}}
+<p class="author-bio">Total - <span>{{plural ../pagination.total empty='No posts' singular='% post' plural='% posts'}}</span> <i class="fas fa-pencil-alt"></i> </P>
+</div>
+</div>
+</div>
+<br />
+
+{{/author}}
+
+<div class="container">
+<div class="row">
+<div class="col-sm-4 mx-auto">
+
+{{#foreach posts}}
+<article class="{{post_class}}">
+{{!-- <h2 class="post-home"><a href="{{url}}" title="{{title}}">{{title}}</a></h2> --}}
+{{#primary_author}}<span class="post-author">Posted by <a href="{{url}}" rel="author">{{name}}</a></span>{{/primary_author}}
+{{#primary_tag}}<span class="post-tags"> in <a href="{{url}}">{{name}}</a></span>{{/primary_tag}}
+<P></P>
+<div class="post-hl">
+{{content}}
+</div>
+<br />
+<div class="text-center">
+<div class="sharebuttons btn-group">
+<a class="btn btn-sm btn-success" href="{{url}}">Read More</a>
+</div>
+</div>
+<hr>
+</article>
+{{else}}
+<p class="text-center"><b>No Posts by this Author</b></p>
+{{/foreach}}
+
+<div class="text-center">
+{{pagination}}
+</div>
+
+</div>
+</div>
+</div>

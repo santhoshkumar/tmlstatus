@@ -1,0 +1,55 @@
+{{!< default}}
+
+{{!-- Everything inside the #post tags pulls data from the post --}}
+{{#post}}
+
+<div class="container">
+<div class="row">
+
+{{> "leftbar"}}
+
+<div class="col-sm-4 mx-auto">
+<br />
+<article class="{{post_class}}">
+{{!-- <h1 class="post-head text-center">{{title}}</h1> --}}
+<div class="text-center">
+{{#primary_author}}<span class="post-author">Posted by <a href="{{url}}" rel="author">{{name}}</a></span>{{/primary_author}}
+{{#primary_tag}}<span class="post-tags"> in <a href="{{url}}">{{name}}</a></span>{{/primary_tag}} <time class="post-date" datetime="{{date updated_at format='YYYY-MM-DD'}}"><i class="far fa-calendar-alt"></i> {{date updated_at format="DD MMMM YYYY"}}</time>
+</div>
+<hr>
+
+<section class="post-content">
+{{content}}
+</section>
+<hr>
+
+<div class="text-center">
+<div class="sharebuttons btn-group">
+<a href="https://api.whatsapp.com/send?text={{encode title}}%20%C2%BB%20முழுமையாக%20படிக்க%20{{url absolute="true"}}" class="btn btn-whatsapp" rel="nofollow noreferrer noopener" target="_blank"><i class="fab fa-whatsapp"></i> Share</a>
+<a href="https://telegram.me/share/url?url={{url absolute="true"}}&text={{encode title}}" class="btn btn-facebook" rel="nofollow noreferrer noopener" target="_blank"><i class="fab fa-telegram-plane"></i> Share</a>
+</div>
+</div>
+<br />
+
+<div class="sidebar-module-inset post-content">
+{{#get "posts" limit="2" filter="id:-{{id}}+author:{{primary_author.slug}}"}}
+<p class="text-center">More kavithai</p>
+{{#foreach posts}}
+{{content}}
+<hr>
+{{else}}
+<p class="text-center"><b>Sorry No Posts Found</b></p>
+{{/foreach}}
+{{/get}}
+{{#primary_author}}
+<p class="text-center"><a href="{{url}}">Read More</a></p>
+{{/primary_author}}
+</div>
+
+</article>
+
+</div>
+
+{{> "sidebar"}}
+
+{{/post}}
