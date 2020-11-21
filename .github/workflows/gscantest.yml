@@ -1,4 +1,4 @@
-name: Test
+name: Scan Theme
 on:
   pull_request:
   push:
