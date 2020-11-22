@@ -2,7 +2,7 @@ name: Deploy Theme to Server
 on:
   push:	
     branches:	
-      - master
+      - main
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -14,3 +14,4 @@ jobs:
           api-url: ${{ secrets.GHOST_ADMIN_API_URL }}
           api-key: ${{ secrets.GHOST_ADMIN_API_KEY }}
           theme-name: "tmlstatus"
+          exclude: "*dist/* *deploy*"
