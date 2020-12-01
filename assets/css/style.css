@@ -296,6 +296,7 @@ hr {
       white-space: normal;
       text-transform: uppercase;
       font-size: 13px;
+      text-align:center;
     }
     .bt-login{
         background-color: #ff8627;
@@ -303,8 +304,8 @@ hr {
         padding-bottom: 8px;
         padding-top: 8px;
         font-weight: bold;
-	   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-	   border-radius: 32px;
+	    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+	    border-radius: 32px;
 	   -moz-osx-font-smoothing: grayscale;
 	   -webkit-font-smoothing: antialiased !important;
 	   -moz-font-smoothing: antialiased !important;
@@ -321,9 +322,42 @@ hr {
         color: #fff;
     }
     .login-form {
-        margin: 0 auto !important;
+        margin: 1.5em 0 1.5em 0;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: 0 2px 4px #5351464d;
+        border-radius: 32px;
         float: none;
         padding: 15px;
+        -moz-osx-font-smoothing: grayscale;
+       -webkit-font-smoothing: antialiased !important;
+       -moz-font-smoothing: antialiased !important;
+        text-rendering: optimizelegibility !important
+    }
+    .login-form input {
+        display: flex;
+        flex-grow: 0.3;
+        font-weight: 500;
+        font-size: 14px;
+        border-radius: 32px;
+        padding: 12px;
+        -moz-osx-font-smoothing: grayscale;
+       -webkit-font-smoothing: antialiased !important;
+       -moz-font-smoothing: antialiased !important;
+       text-rendering: optimizelegibility !important;
+    }
+    .login-form textarea {
+        display: flex;
+        flex-grow: 0.3;
+        font-weight: 500;
+        font-size: 14px;
+        border-radius: 32px;
+        padding: 12px;
+        -moz-osx-font-smoothing: grayscale;
+       -webkit-font-smoothing: antialiased !important;
+       -moz-font-smoothing: antialiased !important;
+       text-rendering: optimizelegibility !important;
     }
     .login-form form.form-horizontal {
         padding: 10px 20px;
