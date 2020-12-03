@@ -8,7 +8,7 @@ function postdata(event) {
     let url = 'https://san.tamilsms.blog/post.php';
     let title = document.querySelector('#title').value;
     let html = document.querySelector('#html').value;
-    if (title == 0 || html == 0) {
+    if (title == 0 || html == 0 || email == 0) {
         document.getElementById('push').innerHTML = '<p class="alert alert-warning text-center">Empty Title or Message</p></div>';
     } else {
         if (url == 0) {
@@ -16,7 +16,7 @@ function postdata(event) {
             document.querySelector('#push').innerHTML = '<p class="alert alert-warning text-center">API URL MISSING</p>'
         } else {
             html = encodeURI(html);
-            fetch(url + '?title=' + title + '&html=' + html, {
+            fetch(url + '?title=' + title + '&html=' + html + '&excerpt=' + excerpt, {
                     method: 'POST',
                 })
                 .then((response) => {
