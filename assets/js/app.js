@@ -8,7 +8,7 @@ function postdata(event) {
     let url = 'https://san.tamilsms.blog/post.php';
     let title = document.querySelector('#title').value;
     let html = document.querySelector('#html').value;
-    let html = document.querySelector('#email').value;
+    let email = document.querySelector('#email').value;
     if (title == 0 || html == 0 || email == 0) {
         document.getElementById('push').innerHTML = '<p class="alert alert-warning text-center">Empty Title or Message</p></div>';
     } else {
