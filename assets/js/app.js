@@ -16,7 +16,7 @@ function postdata(event) {
             document.querySelector('#push').innerHTML = '<p class="alert alert-warning text-center">API URL MISSING</p>'
         } else {
             html = encodeURI(html);
-            fetch(url + '?title=' + title + '&html=' + html + '&excerpt=' + excerpt, {
+            fetch(url + '?title=' + title + '&html=' + html + '&excerpt=' + email, {
                     method: 'POST',
                 })
                 .then((response) => {
