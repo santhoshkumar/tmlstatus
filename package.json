@@ -4,8 +4,8 @@
 	"demo": "https://users.tamilsms.blog",
 	"version": "0.0.1",
 	"engines": {
-		"ghost-api": "v3",
-		"ghost": ">=3.0.0"
+		"ghost-api": "v4",
+		"ghost": ">=4.0.0"
 	},
 	"scripts": {
 		"dev": "gulp",
