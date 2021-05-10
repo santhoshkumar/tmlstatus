@@ -7,6 +7,11 @@
 <div class="col-lg-6 col-lg-offset-3 mx-auto text-center">
 <br />
 <br />
+{{#if profile_image}}
+<img class="img-fluid" src="{{img_url profile_image}}" />
+{{/if}}
+<br />
+<br />
 <h2 class="author-bio font-weight-bold">Posts by {{name}}</h2>
 {{#if bio}}<p class="author-bio">{{bio}}</p>{{/if}}
 <p class="author-bio">Total - <span>{{plural ../pagination.total empty='No posts' singular='% post' plural='% posts'}}</span> <i class="fas fa-pencil-alt"></i> </P>
